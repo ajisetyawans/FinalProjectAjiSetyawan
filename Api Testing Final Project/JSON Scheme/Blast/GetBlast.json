@@ -1,0 +1,1488 @@
+{
+    "$schema": "https://json-schema.org/draft/2019-09/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "default": {},
+    "required": [
+        "message",
+        "blast",
+        "currentTeam",
+        "currentCompany"
+    ],
+    "properties": {
+        "message": {
+            "type": "string",
+            "default": ""
+        },
+        "blast": {
+            "type": "object",
+            "default": {},
+            "required": [
+                "_id",
+                "posts",
+                "createdAt",
+                "updatedAt",
+                "__v"
+            ],
+            "properties": {
+                "_id": {
+                    "type": "string",
+                    "default": ""
+                },
+                "posts": {
+                    "type": "array",
+                    "default": [],
+                    "items": {
+                        "type": "object",
+                        "required": [
+                            "archived",
+                            "autoComplete",
+                            "isNotified",
+                            "complete",
+                            "_id",
+                            "title",
+                            "content",
+                            "creator",
+                            "comments",
+                            "cheers",
+                            "subscribers",
+                            "isPublic",
+                            "createdAt",
+                            "updatedAt",
+                            "__v",
+                            "dueDate"
+                        ],
+                        "properties": {
+                            "archived": {
+                                "type": "object",
+                                "required": [
+                                    "status"
+                                ],
+                                "properties": {
+                                    "status": {
+                                        "type": "boolean"
+                                    }
+                                }
+                            },
+                            "autoComplete": {
+                                "type": "object",
+                                "required": [
+                                    "status",
+                                    "date"
+                                ],
+                                "properties": {
+                                    "status": {
+                                        "type": "boolean"
+                                    },
+                                    "date": {
+                                        "type": "string"
+                                    }
+                                }
+                            },
+                            "isNotified": {
+                                "type": "object",
+                                "required": [
+                                    "dueOneHour",
+                                    "dueOneDay"
+                                ],
+                                "properties": {
+                                    "dueOneHour": {
+                                        "type": "boolean"
+                                    },
+                                    "dueOneDay": {
+                                        "type": "boolean"
+                                    }
+                                }
+                            },
+                            "complete": {
+                                "type": "object",
+                                "required": [
+                                    "status",
+                                    "updatedAt"
+                                ],
+                                "properties": {
+                                    "status": {
+                                        "type": "boolean"
+                                    },
+                                    "updatedAt": {
+                                        "type": "string"
+                                    }
+                                }
+                            },
+                            "_id": {
+                                "type": "string"
+                            },
+                            "title": {
+                                "type": "string"
+                            },
+                            "content": {
+                                "type": "string"
+                            },
+                            "creator": {
+                                "type": "object",
+                                "required": [
+                                    "_id",
+                                    "googleId",
+                                    "email",
+                                    "fullName",
+                                    "photoUrl",
+                                    "bio",
+                                    "status",
+                                    "defaultCompany",
+                                    "companies",
+                                    "createdAt",
+                                    "updatedAt",
+                                    "__v"
+                                ],
+                                "properties": {
+                                    "_id": {
+                                        "type": "string"
+                                    },
+                                    "googleId": {
+                                        "type": "string"
+                                    },
+                                    "email": {
+                                        "type": "string"
+                                    },
+                                    "fullName": {
+                                        "type": "string"
+                                    },
+                                    "photoUrl": {
+                                        "type": "string"
+                                    },
+                                    "bio": {
+                                        "type": "string"
+                                    },
+                                    "status": {
+                                        "type": "string"
+                                    },
+                                    "defaultCompany": {
+                                        "type": "string"
+                                    },
+                                    "companies": {
+                                        "type": "array",
+                                        "items": {}
+                                    },
+                                    "createdAt": {
+                                        "type": "string"
+                                    },
+                                    "updatedAt": {
+                                        "type": "string"
+                                    },
+                                    "__v": {
+                                        "type": "integer"
+                                    }
+                                }
+                            },
+                            "comments": {
+                                "type": "array",
+                                "items": {
+                                    "type": "string"
+                                }
+                            },
+                            "cheers": {
+                                "type": "array",
+                                "items": {
+                                    "type": "string"
+                                }
+                            },
+                            "subscribers": {
+                                "type": "array",
+                                "items": {
+                                    "type": "object",
+                                    "required": [
+                                        "_id",
+                                        "googleId",
+                                        "email",
+                                        "fullName",
+                                        "photoUrl",
+                                        "bio",
+                                        "status",
+                                        "defaultCompany",
+                                        "companies",
+                                        "createdAt",
+                                        "updatedAt",
+                                        "__v"
+                                    ],
+                                    "properties": {
+                                        "_id": {
+                                            "type": "string"
+                                        },
+                                        "googleId": {
+                                            "type": "string"
+                                        },
+                                        "email": {
+                                            "type": "string"
+                                        },
+                                        "fullName": {
+                                            "type": "string"
+                                        },
+                                        "photoUrl": {
+                                            "type": "string"
+                                        },
+                                        "bio": {
+                                            "type": "string"
+                                        },
+                                        "status": {
+                                            "type": "string"
+                                        },
+                                        "defaultCompany": {
+                                            "type": "string"
+                                        },
+                                        "companies": {
+                                            "type": "array",
+                                            "items": {}
+                                        },
+                                        "createdAt": {
+                                            "type": "string"
+                                        },
+                                        "updatedAt": {
+                                            "type": "string"
+                                        },
+                                        "__v": {
+                                            "type": "integer"
+                                        }
+                                    }
+                                }
+                            },
+                            "isPublic": {
+                                "type": "boolean"
+                            },
+                            "createdAt": {
+                                "type": "string"
+                            },
+                            "updatedAt": {
+                                "type": "string"
+                            },
+                            "__v": {
+                                "type": "integer"
+                            },
+                            "dueDate": {
+                                "type": "string"
+                            }
+                        }
+                    }
+                },
+                "createdAt": {
+                    "type": "string",
+                    "default": ""
+                },
+                "updatedAt": {
+                    "type": "string",
+                    "default": ""
+                },
+                "__v": {
+                    "type": "integer",
+                    "default": 0
+                }
+            }
+        },
+        "currentTeam": {
+            "type": "object",
+            "default": {},
+            "required": [
+                "archived",
+                "_id",
+                "name",
+                "desc",
+                "members",
+                "boards",
+                "type",
+                "createdAt",
+                "updatedAt",
+                "__v",
+                "blast",
+                "bucket",
+                "checkIn",
+                "groupChat",
+                "schedule"
+            ],
+            "properties": {
+                "archived": {
+                    "type": "object",
+                    "default": {},
+                    "required": [
+                        "status"
+                    ],
+                    "properties": {
+                        "status": {
+                            "type": "boolean",
+                            "default": false
+                        }
+                    }
+                },
+                "_id": {
+                    "type": "string",
+                    "default": ""
+                },
+                "name": {
+                    "type": "string",
+                    "default": ""
+                },
+                "desc": {
+                    "type": "string",
+                    "default": ""
+                },
+                "members": {
+                    "type": "array",
+                    "default": [],
+                    "items": {
+                        "type": "object",
+                        "required": [
+                            "_id",
+                            "googleId",
+                            "email",
+                            "fullName",
+                            "photoUrl",
+                            "bio",
+                            "status",
+                            "defaultCompany",
+                            "companies",
+                            "createdAt",
+                            "updatedAt",
+                            "__v"
+                        ],
+                        "properties": {
+                            "_id": {
+                                "type": "string"
+                            },
+                            "googleId": {
+                                "type": "string"
+                            },
+                            "email": {
+                                "type": "string"
+                            },
+                            "fullName": {
+                                "type": "string"
+                            },
+                            "photoUrl": {
+                                "type": "string"
+                            },
+                            "bio": {
+                                "type": "string"
+                            },
+                            "status": {
+                                "type": "string"
+                            },
+                            "defaultCompany": {
+                                "type": "string"
+                            },
+                            "companies": {
+                                "type": "array",
+                                "items": {}
+                            },
+                            "createdAt": {
+                                "type": "string"
+                            },
+                            "updatedAt": {
+                                "type": "string"
+                            },
+                            "__v": {
+                                "type": "integer"
+                            }
+                        }
+                    }
+                },
+                "boards": {
+                    "type": "array",
+                    "default": [],
+                    "items": {
+                        "type": "object",
+                        "default": {},
+                        "required": [
+                            "_id",
+                            "name",
+                            "desc",
+                            "lists",
+                            "labels",
+                            "createdAt",
+                            "updatedAt",
+                            "__v"
+                        ],
+                        "properties": {
+                            "_id": {
+                                "type": "string",
+                                "default": ""
+                            },
+                            "name": {
+                                "type": "string",
+                                "default": ""
+                            },
+                            "desc": {
+                                "type": "string",
+                                "default": ""
+                            },
+                            "lists": {
+                                "type": "array",
+                                "default": [],
+                                "items": {
+                                    "type": "object",
+                                    "required": [
+                                        "archived",
+                                        "complete",
+                                        "_id",
+                                        "name",
+                                        "cards",
+                                        "createdAt",
+                                        "updatedAt",
+                                        "__v"
+                                    ],
+                                    "properties": {
+                                        "archived": {
+                                            "type": "object",
+                                            "required": [
+                                                "status"
+                                            ],
+                                            "properties": {
+                                                "status": {
+                                                    "type": "boolean"
+                                                }
+                                            }
+                                        },
+                                        "complete": {
+                                            "type": "object",
+                                            "required": [
+                                                "status",
+                                                "type"
+                                            ],
+                                            "properties": {
+                                                "status": {
+                                                    "type": "boolean"
+                                                },
+                                                "type": {
+                                                    "type": "null"
+                                                }
+                                            }
+                                        },
+                                        "_id": {
+                                            "type": "string"
+                                        },
+                                        "name": {
+                                            "type": "string"
+                                        },
+                                        "cards": {
+                                            "type": "array",
+                                            "items": {
+                                                "type": "object",
+                                                "required": [
+                                                    "complete",
+                                                    "isNotified",
+                                                    "archived",
+                                                    "workload",
+                                                    "_id",
+                                                    "name",
+                                                    "creator",
+                                                    "members",
+                                                    "checklists",
+                                                    "cheers",
+                                                    "comments",
+                                                    "labels",
+                                                    "attachments",
+                                                    "isPublic",
+                                                    "createdAt",
+                                                    "updatedAt",
+                                                    "__v",
+                                                    "dueDate",
+                                                    "startDate",
+                                                    "desc"
+                                                ],
+                                                "properties": {
+                                                    "complete": {
+                                                        "type": "object",
+                                                        "required": [
+                                                            "status",
+                                                            "type"
+                                                        ],
+                                                        "properties": {
+                                                            "status": {
+                                                                "type": "boolean"
+                                                            },
+                                                            "type": {
+                                                                "type": "null"
+                                                            }
+                                                        }
+                                                    },
+                                                    "isNotified": {
+                                                        "type": "object",
+                                                        "required": [
+                                                            "startOneHour",
+                                                            "startOneDay",
+                                                            "dueOneHour",
+                                                            "dueOneDay"
+                                                        ],
+                                                        "properties": {
+                                                            "startOneHour": {
+                                                                "type": "boolean"
+                                                            },
+                                                            "startOneDay": {
+                                                                "type": "boolean"
+                                                            },
+                                                            "dueOneHour": {
+                                                                "type": "boolean"
+                                                            },
+                                                            "dueOneDay": {
+                                                                "type": "boolean"
+                                                            }
+                                                        }
+                                                    },
+                                                    "archived": {
+                                                        "type": "object",
+                                                        "required": [
+                                                            "status"
+                                                        ],
+                                                        "properties": {
+                                                            "status": {
+                                                                "type": "boolean"
+                                                            }
+                                                        }
+                                                    },
+                                                    "workload": {
+                                                        "type": "object",
+                                                        "required": [
+                                                            "value",
+                                                            "measurement"
+                                                        ],
+                                                        "properties": {
+                                                            "value": {
+                                                                "type": "null"
+                                                            },
+                                                            "measurement": {
+                                                                "type": "string"
+                                                            }
+                                                        }
+                                                    },
+                                                    "_id": {
+                                                        "type": "string"
+                                                    },
+                                                    "name": {
+                                                        "type": "string"
+                                                    },
+                                                    "creator": {
+                                                        "type": "string"
+                                                    },
+                                                    "members": {
+                                                        "type": "array",
+                                                        "items": {
+                                                            "type": "object",
+                                                            "required": [
+                                                                "_id",
+                                                                "googleId",
+                                                                "email",
+                                                                "fullName",
+                                                                "photoUrl",
+                                                                "bio",
+                                                                "status",
+                                                                "defaultCompany",
+                                                                "companies",
+                                                                "createdAt",
+                                                                "updatedAt",
+                                                                "__v"
+                                                            ],
+                                                            "properties": {
+                                                                "_id": {
+                                                                    "type": "string"
+                                                                },
+                                                                "googleId": {
+                                                                    "type": "string"
+                                                                },
+                                                                "email": {
+                                                                    "type": "string"
+                                                                },
+                                                                "fullName": {
+                                                                    "type": "string"
+                                                                },
+                                                                "photoUrl": {
+                                                                    "type": "string"
+                                                                },
+                                                                "bio": {
+                                                                    "type": "string"
+                                                                },
+                                                                "status": {
+                                                                    "type": "string"
+                                                                },
+                                                                "defaultCompany": {
+                                                                    "type": "string"
+                                                                },
+                                                                "companies": {
+                                                                    "type": "array",
+                                                                    "items": {}
+                                                                },
+                                                                "createdAt": {
+                                                                    "type": "string"
+                                                                },
+                                                                "updatedAt": {
+                                                                    "type": "string"
+                                                                },
+                                                                "__v": {
+                                                                    "type": "integer"
+                                                                }
+                                                            }
+                                                        }
+                                                    },
+                                                    "checklists": {
+                                                        "type": "array",
+                                                        "items": {
+                                                            "type": "string",
+                                                            "default": ""
+                                                        }
+                                                    },
+                                                    "cheers": {
+                                                        "type": "array",
+                                                        "items": {}
+                                                    },
+                                                    "comments": {
+                                                        "type": "array",
+                                                        "items": {
+                                                            "type": "string"
+                                                        }
+                                                    },
+                                                    "labels": {
+                                                        "type": "array",
+                                                        "items": {}
+                                                    },
+                                                    "attachments": {
+                                                        "type": "array",
+                                                        "items": {}
+                                                    },
+                                                    "isPublic": {
+                                                        "type": "boolean"
+                                                    },
+                                                    "createdAt": {
+                                                        "type": "string"
+                                                    },
+                                                    "updatedAt": {
+                                                        "type": "string"
+                                                    },
+                                                    "__v": {
+                                                        "type": "integer"
+                                                    },
+                                                    "dueDate": {
+                                                        "type": "string"
+                                                    },
+                                                    "startDate": {
+                                                        "type": "string"
+                                                    },
+                                                    "desc": {
+                                                        "type": "string",
+                                                        "default": ""
+                                                    }
+                                                }
+                                            }
+                                        },
+                                        "createdAt": {
+                                            "type": "string"
+                                        },
+                                        "updatedAt": {
+                                            "type": "string"
+                                        },
+                                        "__v": {
+                                            "type": "integer"
+                                        }
+                                    }
+                                }
+                            },
+                            "labels": {
+                                "type": "array",
+                                "default": [],
+                                "items": {
+                                    "type": "string",
+                                    "default": ""
+                                }
+                            },
+                            "createdAt": {
+                                "type": "string",
+                                "default": ""
+                            },
+                            "updatedAt": {
+                                "type": "string",
+                                "default": ""
+                            },
+                            "__v": {
+                                "type": "integer",
+                                "default": 0
+                            }
+                        }
+                    }
+                },
+                "type": {
+                    "type": "string",
+                    "default": ""
+                },
+                "createdAt": {
+                    "type": "string",
+                    "default": ""
+                },
+                "updatedAt": {
+                    "type": "string",
+                    "default": ""
+                },
+                "__v": {
+                    "type": "integer",
+                    "default": 0
+                },
+                "blast": {
+                    "type": "object",
+                    "default": {},
+                    "required": [
+                        "_id",
+                        "posts",
+                        "createdAt",
+                        "updatedAt",
+                        "__v"
+                    ],
+                    "properties": {
+                        "_id": {
+                            "type": "string",
+                            "default": ""
+                        },
+                        "posts": {
+                            "type": "array",
+                            "default": [],
+                            "items": {
+                                "type": "object",
+                                "required": [
+                                    "archived",
+                                    "autoComplete",
+                                    "isNotified",
+                                    "complete",
+                                    "_id",
+                                    "title",
+                                    "content",
+                                    "creator",
+                                    "comments",
+                                    "cheers",
+                                    "subscribers",
+                                    "isPublic",
+                                    "createdAt",
+                                    "updatedAt",
+                                    "__v",
+                                    "dueDate"
+                                ],
+                                "properties": {
+                                    "archived": {
+                                        "type": "object",
+                                        "required": [
+                                            "status"
+                                        ],
+                                        "properties": {
+                                            "status": {
+                                                "type": "boolean"
+                                            }
+                                        }
+                                    },
+                                    "autoComplete": {
+                                        "type": "object",
+                                        "required": [
+                                            "status",
+                                            "date"
+                                        ],
+                                        "properties": {
+                                            "status": {
+                                                "type": "boolean"
+                                            },
+                                            "date": {
+                                                "type": "string"
+                                            }
+                                        }
+                                    },
+                                    "isNotified": {
+                                        "type": "object",
+                                        "required": [
+                                            "dueOneHour",
+                                            "dueOneDay"
+                                        ],
+                                        "properties": {
+                                            "dueOneHour": {
+                                                "type": "boolean"
+                                            },
+                                            "dueOneDay": {
+                                                "type": "boolean"
+                                            }
+                                        }
+                                    },
+                                    "complete": {
+                                        "type": "object",
+                                        "required": [
+                                            "status",
+                                            "updatedAt"
+                                        ],
+                                        "properties": {
+                                            "status": {
+                                                "type": "boolean"
+                                            },
+                                            "updatedAt": {
+                                                "type": "string",
+                                                "default": ""
+                                            }
+                                        }
+                                    },
+                                    "_id": {
+                                        "type": "string"
+                                    },
+                                    "title": {
+                                        "type": "string"
+                                    },
+                                    "content": {
+                                        "type": "string"
+                                    },
+                                    "creator": {
+                                        "type": "object",
+                                        "required": [
+                                            "_id",
+                                            "googleId",
+                                            "email",
+                                            "fullName",
+                                            "photoUrl",
+                                            "bio",
+                                            "status",
+                                            "defaultCompany",
+                                            "companies",
+                                            "createdAt",
+                                            "updatedAt",
+                                            "__v"
+                                        ],
+                                        "properties": {
+                                            "_id": {
+                                                "type": "string"
+                                            },
+                                            "googleId": {
+                                                "type": "string"
+                                            },
+                                            "email": {
+                                                "type": "string"
+                                            },
+                                            "fullName": {
+                                                "type": "string"
+                                            },
+                                            "photoUrl": {
+                                                "type": "string"
+                                            },
+                                            "bio": {
+                                                "type": "string"
+                                            },
+                                            "status": {
+                                                "type": "string"
+                                            },
+                                            "defaultCompany": {
+                                                "type": "string"
+                                            },
+                                            "companies": {
+                                                "type": "array",
+                                                "items": {}
+                                            },
+                                            "createdAt": {
+                                                "type": "string"
+                                            },
+                                            "updatedAt": {
+                                                "type": "string"
+                                            },
+                                            "__v": {
+                                                "type": "integer"
+                                            }
+                                        }
+                                    },
+                                    "comments": {
+                                        "type": "array",
+                                        "items": {
+                                            "type": "string"
+                                        }
+                                    },
+                                    "cheers": {
+                                        "type": "array",
+                                        "items": {}
+                                    },
+                                    "subscribers": {
+                                        "type": "array",
+                                        "items": {
+                                            "type": "string"
+                                        }
+                                    },
+                                    "isPublic": {
+                                        "type": "boolean"
+                                    },
+                                    "createdAt": {
+                                        "type": "string"
+                                    },
+                                    "updatedAt": {
+                                        "type": "string"
+                                    },
+                                    "__v": {
+                                        "type": "integer"
+                                    },
+                                    "dueDate": {
+                                        "type": "string"
+                                    }
+                                }
+                            }
+                        },
+                        "createdAt": {
+                            "type": "string",
+                            "default": ""
+                        },
+                        "updatedAt": {
+                            "type": "string",
+                            "default": ""
+                        },
+                        "__v": {
+                            "type": "integer",
+                            "default": 0
+                        }
+                    }
+                },
+                "bucket": {
+                    "type": "object",
+                    "default": {},
+                    "required": [
+                        "archived",
+                        "_id",
+                        "docs",
+                        "buckets",
+                        "files",
+                        "title",
+                        "type",
+                        "isPublic",
+                        "subscribers",
+                        "createdAt",
+                        "updatedAt",
+                        "__v"
+                    ],
+                    "properties": {
+                        "archived": {
+                            "type": "object",
+                            "default": {},
+                            "required": [
+                                "status"
+                            ],
+                            "properties": {
+                                "status": {
+                                    "type": "boolean",
+                                    "default": false
+                                }
+                            }
+                        },
+                        "_id": {
+                            "type": "string",
+                            "default": ""
+                        },
+                        "docs": {
+                            "type": "array",
+                            "default": [],
+                            "items": {}
+                        },
+                        "buckets": {
+                            "type": "array",
+                            "default": [],
+                            "items": {}
+                        },
+                        "files": {
+                            "type": "array",
+                            "default": [],
+                            "items": {}
+                        },
+                        "title": {
+                            "type": "string",
+                            "default": ""
+                        },
+                        "type": {
+                            "type": "string",
+                            "default": ""
+                        },
+                        "isPublic": {
+                            "type": "boolean",
+                            "default": false
+                        },
+                        "subscribers": {
+                            "type": "array",
+                            "default": [],
+                            "items": {}
+                        },
+                        "createdAt": {
+                            "type": "string",
+                            "default": ""
+                        },
+                        "updatedAt": {
+                            "type": "string",
+                            "default": ""
+                        },
+                        "__v": {
+                            "type": "integer",
+                            "default": 0
+                        }
+                    }
+                },
+                "checkIn": {
+                    "type": "object",
+                    "default": {},
+                    "required": [
+                        "_id",
+                        "questions",
+                        "createdAt",
+                        "updatedAt",
+                        "__v"
+                    ],
+                    "properties": {
+                        "_id": {
+                            "type": "string",
+                            "default": ""
+                        },
+                        "questions": {
+                            "type": "array",
+                            "default": [],
+                            "items": {}
+                        },
+                        "createdAt": {
+                            "type": "string",
+                            "default": ""
+                        },
+                        "updatedAt": {
+                            "type": "string",
+                            "default": ""
+                        },
+                        "__v": {
+                            "type": "integer",
+                            "default": 0
+                        }
+                    }
+                },
+                "groupChat": {
+                    "type": "object",
+                    "default": {},
+                    "required": [
+                        "_id",
+                        "messages",
+                        "attachments",
+                        "createdAt",
+                        "updatedAt",
+                        "__v"
+                    ],
+                    "properties": {
+                        "_id": {
+                            "type": "string",
+                            "default": ""
+                        },
+                        "messages": {
+                            "type": "array",
+                            "default": [],
+                            "items": {
+                                "type": "object",
+                                "required": [
+                                    "_id",
+                                    "content",
+                                    "creator",
+                                    "isDeleted",
+                                    "createdAt",
+                                    "updatedAt",
+                                    "__v",
+                                    "deletedAt"
+                                ],
+                                "properties": {
+                                    "_id": {
+                                        "type": "string"
+                                    },
+                                    "content": {
+                                        "type": "string"
+                                    },
+                                    "creator": {
+                                        "type": "object",
+                                        "required": [
+                                            "_id",
+                                            "googleId",
+                                            "email",
+                                            "fullName",
+                                            "photoUrl",
+                                            "bio",
+                                            "status",
+                                            "defaultCompany",
+                                            "companies",
+                                            "createdAt",
+                                            "updatedAt",
+                                            "__v"
+                                        ],
+                                        "properties": {
+                                            "_id": {
+                                                "type": "string"
+                                            },
+                                            "googleId": {
+                                                "type": "string"
+                                            },
+                                            "email": {
+                                                "type": "string"
+                                            },
+                                            "fullName": {
+                                                "type": "string"
+                                            },
+                                            "photoUrl": {
+                                                "type": "string"
+                                            },
+                                            "bio": {
+                                                "type": "string"
+                                            },
+                                            "status": {
+                                                "type": "string"
+                                            },
+                                            "defaultCompany": {
+                                                "type": "string"
+                                            },
+                                            "companies": {
+                                                "type": "array",
+                                                "items": {}
+                                            },
+                                            "createdAt": {
+                                                "type": "string"
+                                            },
+                                            "updatedAt": {
+                                                "type": "string"
+                                            },
+                                            "__v": {
+                                                "type": "integer"
+                                            }
+                                        }
+                                    },
+                                    "isDeleted": {
+                                        "type": "boolean"
+                                    },
+                                    "createdAt": {
+                                        "type": "string"
+                                    },
+                                    "updatedAt": {
+                                        "type": "string"
+                                    },
+                                    "__v": {
+                                        "type": "integer"
+                                    },
+                                    "deletedAt": {
+                                        "type": "string"
+                                    }
+                                }
+                            }
+                        },
+                        "attachments": {
+                            "type": "array",
+                            "default": [],
+                            "items": {
+                                "type": "object",
+                                "required": [
+                                    "_id",
+                                    "name",
+                                    "url",
+                                    "creator",
+                                    "type",
+                                    "mimeType",
+                                    "isDeleted",
+                                    "createdAt",
+                                    "updatedAt",
+                                    "__v",
+                                    "deletedAt"
+                                ],
+                                "properties": {
+                                    "_id": {
+                                        "type": "string"
+                                    },
+                                    "name": {
+                                        "type": "string"
+                                    },
+                                    "url": {
+                                        "type": [
+                                            "string",
+                                            "null"
+                                        ]
+                                    },
+                                    "creator": {
+                                        "type": "object",
+                                        "required": [
+                                            "_id",
+                                            "googleId",
+                                            "email",
+                                            "fullName",
+                                            "photoUrl",
+                                            "bio",
+                                            "status",
+                                            "defaultCompany",
+                                            "companies",
+                                            "createdAt",
+                                            "updatedAt",
+                                            "__v"
+                                        ],
+                                        "properties": {
+                                            "_id": {
+                                                "type": "string"
+                                            },
+                                            "googleId": {
+                                                "type": "string"
+                                            },
+                                            "email": {
+                                                "type": "string"
+                                            },
+                                            "fullName": {
+                                                "type": "string"
+                                            },
+                                            "photoUrl": {
+                                                "type": "string"
+                                            },
+                                            "bio": {
+                                                "type": "string"
+                                            },
+                                            "status": {
+                                                "type": "string"
+                                            },
+                                            "defaultCompany": {
+                                                "type": "string"
+                                            },
+                                            "companies": {
+                                                "type": "array",
+                                                "items": {}
+                                            },
+                                            "createdAt": {
+                                                "type": "string"
+                                            },
+                                            "updatedAt": {
+                                                "type": "string"
+                                            },
+                                            "__v": {
+                                                "type": "integer"
+                                            }
+                                        }
+                                    },
+                                    "type": {
+                                        "type": [
+                                            "string",
+                                            "null"
+                                        ]
+                                    },
+                                    "mimeType": {
+                                        "type": [
+                                            "string",
+                                            "null"
+                                        ]
+                                    },
+                                    "isDeleted": {
+                                        "type": "boolean"
+                                    },
+                                    "createdAt": {
+                                        "type": "string"
+                                    },
+                                    "updatedAt": {
+                                        "type": "string"
+                                    },
+                                    "__v": {
+                                        "type": "integer"
+                                    },
+                                    "deletedAt": {
+                                        "type": "string"
+                                    }
+                                }
+                            }
+                        },
+                        "createdAt": {
+                            "type": "string",
+                            "default": ""
+                        },
+                        "updatedAt": {
+                            "type": "string",
+                            "default": ""
+                        },
+                        "__v": {
+                            "type": "integer",
+                            "default": 0
+                        }
+                    }
+                },
+                "schedule": {
+                    "type": "object",
+                    "default": {},
+                    "required": [
+                        "googleCalendar",
+                        "_id",
+                        "events",
+                        "setPublic",
+                        "createdAt",
+                        "updatedAt",
+                        "__v"
+                    ],
+                    "properties": {
+                        "googleCalendar": {
+                            "type": "object",
+                            "default": {},
+                            "required": [
+                                "calendarId",
+                                "aclRuleId",
+                                "calendarIcsLink",
+                                "calendarHtmlLink"
+                            ],
+                            "properties": {
+                                "calendarId": {
+                                    "type": "null",
+                                    "default": null
+                                },
+                                "aclRuleId": {
+                                    "type": "null",
+                                    "default": null
+                                },
+                                "calendarIcsLink": {
+                                    "type": "null",
+                                    "default": null
+                                },
+                                "calendarHtmlLink": {
+                                    "type": "null",
+                                    "default": null
+                                }
+                            }
+                        },
+                        "_id": {
+                            "type": "string",
+                            "default": ""
+                        },
+                        "events": {
+                            "type": "array",
+                            "default": [],
+                            "items": {}
+                        },
+                        "setPublic": {
+                            "type": "boolean",
+                            "default": false
+                        },
+                        "createdAt": {
+                            "type": "string",
+                            "default": ""
+                        },
+                        "updatedAt": {
+                            "type": "string",
+                            "default": ""
+                        },
+                        "__v": {
+                            "type": "integer",
+                            "default": 0
+                        }
+                    }
+                }
+            }
+        },
+        "currentCompany": {
+            "type": "object",
+            "default": {},
+            "required": [
+                "_id",
+                "workloadCapacityDefault",
+                "logo",
+                "admins",
+                "members",
+                "teams",
+                "name",
+                "desc",
+                "membersJoined",
+                "createdAt",
+                "updatedAt",
+                "__v"
+            ],
+            "properties": {
+                "_id": {
+                    "type": "string",
+                    "default": ""
+                },
+                "workloadCapacityDefault": {
+                    "type": "object",
+                    "default": {},
+                    "required": [
+                        "value",
+                        "measurement"
+                    ],
+                    "properties": {
+                        "value": {
+                            "type": "integer",
+                            "default": 0
+                        },
+                        "measurement": {
+                            "type": "string",
+                            "default": ""
+                        }
+                    }
+                },
+                "logo": {
+                    "type": "string",
+                    "default": ""
+                },
+                "admins": {
+                    "type": "array",
+                    "default": [],
+                    "items": {
+                        "type": "string",
+                        "default": ""
+                    }
+                },
+                "members": {
+                    "type": "array",
+                    "default": [],
+                    "items": {
+                        "type": "object",
+                        "required": [
+                            "_id",
+                            "fullName",
+                            "photoUrl"
+                        ],
+                        "properties": {
+                            "_id": {
+                                "type": "string"
+                            },
+                            "fullName": {
+                                "type": "string"
+                            },
+                            "photoUrl": {
+                                "type": "string"
+                            }
+                        }
+                    }
+                },
+                "teams": {
+                    "type": "array",
+                    "default": [],
+                    "items": {
+                        "type": "string"
+                    }
+                },
+                "name": {
+                    "type": "string",
+                    "default": ""
+                },
+                "desc": {
+                    "type": "string",
+                    "default": ""
+                },
+                "membersJoined": {
+                    "type": "array",
+                    "default": [],
+                    "items": {
+                        "type": "object",
+                        "required": [
+                            "_id",
+                            "member",
+                            "joinedAt"
+                        ],
+                        "properties": {
+                            "_id": {
+                                "type": "string"
+                            },
+                            "member": {
+                                "type": "string"
+                            },
+                            "joinedAt": {
+                                "type": "string"
+                            }
+                        }
+                    }
+                },
+                "createdAt": {
+                    "type": "string",
+                    "default": ""
+                },
+                "updatedAt": {
+                    "type": "string",
+                    "default": ""
+                },
+                "__v": {
+                    "type": "integer",
+                    "default": 0
+                }
+            }
+        }
+    }
+}

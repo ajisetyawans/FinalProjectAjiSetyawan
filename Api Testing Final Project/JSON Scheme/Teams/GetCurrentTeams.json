@@ -1,0 +1,116 @@
+{
+    "$schema": "https://json-schema.org/draft/2019-09/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "default": {},
+    "required": [
+        "teams"
+    ],
+    "properties": {
+        "teams": {
+            "type": "array",
+            "default": [],
+            "items": {
+                "type": "object",
+                "required": [
+                    "_id",
+                    "name",
+                    "desc",
+                    "members",
+                    "boards",
+                    "type",
+                    "archived",
+                    "createdAt",
+                    "updatedAt",
+                    "__v",
+                    "blast",
+                    "bucket",
+                    "checkIn",
+                    "groupChat",
+                    "schedule"
+                ],
+                "properties": {
+                    "_id": {
+                        "type": "string"
+                    },
+                    "name": {
+                        "type": "string"
+                    },
+                    "desc": {
+                        "type": "string"
+                    },
+                    "members": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "required": [
+                                "_id",
+                                "photoUrl",
+                                "bio",
+                                "status"
+                            ],
+                            "properties": {
+                                "_id": {
+                                    "type": "string"
+                                },
+                                "photoUrl": {
+                                    "type": "string"
+                                },
+                                "bio": {
+                                    "type": "string"
+                                },
+                                "status": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    },
+                    "boards": {
+                        "type": "array",
+                        "items": {
+                            "type": "string"
+                        }
+                    },
+                    "type": {
+                        "type": "string"
+                    },
+                    "archived": {
+                        "type": "object",
+                        "required": [
+                            "status"
+                        ],
+                        "properties": {
+                            "status": {
+                                "type": "boolean"
+                            }
+                        }
+                    },
+                    "createdAt": {
+                        "type": "string"
+                    },
+                    "updatedAt": {
+                        "type": "string"
+                    },
+                    "__v": {
+                        "type": "integer"
+                    },
+                    "blast": {
+                        "type": "string"
+                    },
+                    "bucket": {
+                        "type": "string"
+                    },
+                    "checkIn": {
+                        "type": "string"
+                    },
+                    "groupChat": {
+                        "type": "string"
+                    },
+                    "schedule": {
+                        "type": "string"
+                    }
+                }
+            }
+        }
+    }
+}

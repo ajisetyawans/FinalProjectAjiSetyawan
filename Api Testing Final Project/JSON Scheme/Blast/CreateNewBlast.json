@@ -1,0 +1,186 @@
+{
+    "type": "object",
+    "default": {},
+    "required": [
+        "message",
+        "blast"
+    ],
+    "properties": {
+        "message": {
+            "type": "string",
+            "default": ""
+        },
+        "blast": {
+            "type": "object",
+            "default": {},
+            "required": [
+                "_id",
+                "posts",
+                "createdAt",
+                "updatedAt",
+                "__v"
+            ],
+            "properties": {
+                "_id": {
+                    "type": "string",
+                    "default": ""
+                },
+                "posts": {
+                    "type": "array",
+                    "default": [],
+                    "items": {
+                        "type": "object",
+                        "required": [
+                            "_id",
+                            "title",
+                            "content",
+                            "creator",
+                            "comments",
+                            "cheers",
+                            "subscribers",
+                            "archived",
+                            "isPublic",
+                            "autoComplete",
+                            "isNotified",
+                            "complete",
+                            "createdAt",
+                            "updatedAt",
+                            "__v",
+                            "dueDate"
+                        ],
+                        "properties": {
+                            "_id": {
+                                "type": "string"
+                            },
+                            "title": {
+                                "type": "string"
+                            },
+                            "content": {
+                                "type": "string"
+                            },
+                            "creator": {
+                                "type": "object",
+                                "required": [
+                                    "_id",
+                                    "fullName",
+                                    "photoUrl"
+                                ],
+                                "properties": {
+                                    "_id": {
+                                        "type": "string"
+                                    },
+                                    "fullName": {
+                                        "type": "string"
+                                    },
+                                    "photoUrl": {
+                                        "type": "string"
+                                    }
+                                }
+                            },
+                            "comments": {
+                                "type": "array",
+                                "items": {
+                                    "type": "string"
+                                }
+                            },
+                            "cheers": {
+                                "type": "array",
+                                "items": {}
+                            },
+                            "subscribers": {
+                                "type": "array",
+                                "items": {
+                                    "type": "string"
+                                }
+                            },
+                            "archived": {
+                                "type": "object",
+                                "required": [
+                                    "status"
+                                ],
+                                "properties": {
+                                    "status": {
+                                        "type": "boolean"
+                                    }
+                                }
+                            },
+                            "isPublic": {
+                                "type": "boolean"
+                            },
+                            "autoComplete": {
+                                "type": "object",
+                                "required": [
+                                    "status",
+                                    "date"
+                                ],
+                                "properties": {
+                                    "status": {
+                                        "type": "boolean"
+                                    },
+                                    "date": {
+                                        "type": "string"
+                                    }
+                                }
+                            },
+                            "isNotified": {
+                                "type": "object",
+                                "required": [
+                                    "dueOneHour",
+                                    "dueOneDay"
+                                ],
+                                "properties": {
+                                    "dueOneHour": {
+                                        "type": "boolean"
+                                    },
+                                    "dueOneDay": {
+                                        "type": "boolean"
+                                    }
+                                }
+                            },
+                            "complete": {
+                                "type": "object",
+                                "required": [
+                                    "status",
+                                    "updatedAt"
+                                ],
+                                "properties": {
+                                    "status": {
+                                        "type": "boolean"
+                                    },
+                                    "updatedAt": {
+                                        "type": "string",
+                                        "default": ""
+                                    }
+                                }
+                            },
+                            "createdAt": {
+                                "type": "string"
+                            },
+                            "updatedAt": {
+                                "type": "string"
+                            },
+                            "__v": {
+                                "type": "integer"
+                            },
+                            "dueDate": {
+                                "type": "string"
+                            }
+                        }
+                    }
+                },
+                "createdAt": {
+                    "type": "string",
+                    "default": ""
+                },
+                "updatedAt": {
+                    "type": "string",
+                    "default": ""
+                },
+                "__v": {
+                    "type": "integer",
+                    "default": 0
+                }
+            }
+        }
+    }
+}
